@@ -14,7 +14,7 @@ function Text:new(text, size)
 
     --this.size = size
     this.font_name = DEFAULT_FONT
-    this.font = love.graphics.newFont(this.font_name, size)
+    this.font = love.graphics.getFont()--love.graphics.newFont(this.font_name, size)
     this.text = love.graphics.newText(this.font, text)
 
     return this
