@@ -9,7 +9,7 @@ LevelLoader = {
 LevelLoader.__index = LevelLoader
 
 function LevelLoader:init()
-    o = setmetatable({}, self)
+    local o = setmetatable({}, self)
 
     o.objects = {}
     o.width = 0
